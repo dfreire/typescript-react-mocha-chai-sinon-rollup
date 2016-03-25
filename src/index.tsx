@@ -16,7 +16,3 @@ ReactDOM.render(
     <Hello compiler="TypeScript" framework="Rollup" />,
     document.getElementById("example")
 );
-
-export function sum(a: number, b: number): number {
-    return a + b;
-}

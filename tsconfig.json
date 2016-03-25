@@ -1,16 +1,28 @@
 {
-    "compileOnSave": false,
+    "compileOnSave": true,
     "compilerOptions": {
-        "outDir": "./dist/",
+        "outDir": "./atom-typescript-out/",
         "sourceMap": true,
         "noImplicitAny": true,
         "module": "commonjs",
         "target": "es5",
         "jsx": "react"
     },
+    "filesGlob": [
+        "typings/browser.d.ts",
+        "src/**/*.tsx",
+        "src/**/*.ts",
+        "test/**/*.ts",
+        "!node_modules/**"
+    ],
     "files": [
-        "./typings/browser.d.ts",
-        "./src/index.tsx",
-        "./test/index_test.ts"
-    ]
+        "typings/browser.d.ts",
+        "src/index.tsx",
+        "src/functions.ts",
+        "test/functions_test.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true,
+        "formatOnSave": true
+    }
 }

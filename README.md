@@ -4,6 +4,7 @@ npm install rollup --global
 
 npm install --save-dev rollup-plugin-typescript
 npm install --save-dev rollup-plugin-uglify
+npm install --save-dev rollup-plugin-multi-entry
 
 npm install --save-dev react react-dom
 typings install --ambient --save react react-dom
